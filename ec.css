@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 3900px;
+    /* height: 920px; */
+    background-image: url(./images/tupian.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+/* 头部 */
+.currentTime {
+    font-size: 24px;
+    color: white;
+    margin: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.currentTime .day {
+    margin-right: 40px;
+    background: linear-gradient(to bottom, #fff, #3C82D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.currentTime .time {
+    background: linear-gradient(to bottom, #fff, #3C82D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* 主体 */
+main {
+    margin-top: 80px;
+    display: flex;
+    padding: 0 20px;
+    color: #59C9CB;
+}
+
+/* 年度贡献 */
+.contribution {
+    width: 18%;
+    /* background-color: red; */
+}
+
+.contribu_title {
+    background: url(./images/back_02.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background-position: 15px 0;
+    /* text-align: center; */
+}
+
+.contribu_title span {
+    margin-left: 60px;
+}
+
+.contribution .con_box {
+    border: 1px solid #3C82D0;
+    width: 100%;
+
+}
+
+.con_box .con_fen {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.con_box .con_table {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con_table_title {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 200px;
+    height: 28px;
+    line-height: 28px;
+    background: url(./images/back_02ljp.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.contribution .con_fen>section {
+    border: 3px solid #142A3F;
+    background-color: #080B18;
+    padding: 14px 10px;
+    box-shadow: 3px 5px 10px #75652A;
+}
+/* 热卖模块 */
+.hotSell {
+    width: 18%;
+    /* background-color: red; */
+}
+
+
+.hotSell .contribu_title {
+    width: 400px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 60px;
+}
+
+.ctr {
+    /* background-color: red; */
+    font-size: 18px;
+    width: 300px;
+    margin-left: 80px;
+    text-align: center;
+}
+.record {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: url(./images/cd.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.record::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 80%;
+    border-radius: 50;
+    /* background-color: #fff; */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.hotSell .contribu_title2 {
+    width: 300px;
+    margin-top: 80px;
+    background: url(./images/back_01.png) no-repeat;
+    background-size: cover;
+    line-height: 40px;
+    background-position: 15px 0;
+    margin-left: 60px;
+    
+}
+.contribu_title2 span {
+    margin-left: 60px;
+    color: pink;
+}
+table {
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgba(255,0,0,.1);
+    border-collapse: collapse;
+    margin-left: 60px;
+}
+th,td {
+    padding: 8px 12px;
+    text-align: center;
+    color: white;
+}
+th {
+    color: #999;
+    font-weight: normal;
+}
+table tr:nth-child(2) {
+    background-color: rgba(255,0,0,.2);
+}
+.t1 tr:nth-child(2) td {
+    color: rgba(255,0,0,.5);
+}
+.contribu_title3 {
+    margin-top: 80px;
+    width: 300px;
+    height: 36px;
+    line-height: 36px;
+    background: url(./images/back_02.png) no-repeat;
+    background-size: cover;
+    line-height: 40px;
+    background-position: 15px 0;
+    margin-left: 60px;
+}
+.contribu_title3 span {
+    margin-left: 60px;
+}
+.t2 {
+    border: none;
+    border-top: 1px solid #3C82D0;
+    border-left: 1px solid #3C82D0;
+    background-color: rgba(0,0,255,.1);
+}
+.t2 tr:nth-child(2) {
+    background-color: rgba(0,0,255,.2);
+}
+.t2 tr:nth-child(2) td {
+    color: rgb(0,191,255,.8);
+}
+/* 商品分析 */
+.analyse {
+    width: 28%;
+    height: 200px;
+    /* background-color: blue; */
+}
+.analyse .analyse_title {
+    text-align: center;
+}
+.analyse .analyse_title .big {
+    font-size: 30px;
+    margin-left: 195px;
+    margin-top: 75px;
+}
+.analyse .analyse_title .small {
+    font-size: 20px;
+    margin-left: 195px;
+    margin-top: 5px;
+    color: rgba(211, 211, 211, 0.8);
+
+}
+.analyse_money {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.analyse_money>article {
+    width: 260px;
+    height: 140px;
+    line-height: 2;
+}
+.analyse_money>article:nth-child(1) {
+    background-image: url(./images/销售额.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 70px 0px;
+}
+.analyse_money>article:nth-child(2) {
+    background-image: url(./images/sales.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 70px 0px;
+    color: #F1C482;
+}
+.analyse_money>article:nth-child(3) {
+    background-image: url(./images/bg-money\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 70px 0px;
+    color: #C9706F;
+}
+.analyse_money p:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.analyse_money p:last-child {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.analyse_money p:last-child>span {
+    font-size: 22px;
+    color: #999;
+}
+#analyse {
+    margin: 0 auto;
+    background-color: pink;
+    background: url(./images/mem-trend-gb.png) no-repeat;
+    background-size: 100%;
+}
+.analyse .con_table_title {
+    margin-left: 0;  
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.biao_title {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.biao_right {
+    margin-right: 30px;
+}
+.biao_right span{
+    margin-right: 15px;
+}
+canvas {
+    /* border: 1px solid red; */
+    /* color: red; */
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+/* 类别 */
+.category {
+    width: 19%;
+    /* height: 200px; */
+    /* background-color: yellow; */
+    /* border: 1px solid #3C82D0; */
+}
+.category .contribu_title2 {
+    width: 400px;
+    margin-top: 80px;
+    background: url(./images/back_02.png) no-repeat;
+    background-size: cover;
+    line-height: 40px;
+    background-position: 15px 0;
+    margin-left: 60px;
+    
+}
+.category .contribu_title2 span {
+    margin-left: 60px;
+    color: #3C82D0;
+}
+.category .fruit {
+    width: 100%;
+    /* height: 200px; */
+    /* background-color: blue;   */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.category .fruit>section {
+    width: 22%;
+    text-align: center;
+    background: url(./images/back_03.png) no-repeat;
+    background-size: 140px 150px;
+    /* border: 1px solid red; */
+    margin: 5px;
+    background-color: rgba(255,255,255,.1);
+    background-position: 1px 1px;
+    padding: 30px 2px;
+}
+.category .fruit>section img {
+    width: 50%;
+}
+/* 主力购买 */
+.mainForce {
+    width: 17%;
+    /* height: 200px; */
+    /* background-color: rgb(89, 89, 189); */
+}
+.mainForce .table_title {
+    background: url(./images/back_02.png) no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.mainForce .table_title span {
+    margin-left: 60px;
+}
+.mainForce table {
+    background: url(./images/active-bg.png) no-repeat;
+    background-size: 560px 270px;
+    border: none;
+    background-color: rgba(0,0,255,.1);
+    margin-top: 30px;
+}
+.mainForce table td {
+    padding: 12px 20px;
+}
+.mainForce table tr:first-child td{
+    color: #999;
+}
+.mainForce table tr:nth-child(2) {
+    background-color: rgba(0,0,255,.2);
+}
+.mainForce table tr:nth-child(2) td {
+    color: rgb(0,191,255,.8);
+}

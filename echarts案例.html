@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echarts案例</title>
+    <link rel="stylesheet" href="./ec.css">
+    <script src="./echarts.js"></script>
+</head>
+
+<body>
+    <header class="currentTime">
+        <div class="day">
+            <span>2023年</span>
+            <span>06月</span>
+            <span>02日</span>
+        </div>
+        <div class="time">
+            <span>15时</span>
+            <span>09分</span>
+            <span>32秒</span>
+        </div>
+
+    </header>
+    <main>
+        <article class="contribution">
+            <h3 class="contribu_title"><span>年销售额贡献最高商品TOP3</span></h3>
+            <section class="con_box">
+                <article class="con_fen">
+                    <section>热销产品1</section>
+                    <section>热销产品2</section>
+                    <section>热销产品3</section>
+                </article>
+                <article class="con_table">
+                    <section class="con_table_title">年度热销产品1</section>
+                    <section id="con1" style="width: 600px;height:250px;"></section>
+                    <section class="con_table_title">年度热销产品2</section>
+                    <section id="con2" style="width: 600px;height:250px;"></section>
+                    <section class="con_table_title">年度热销产品3</section>
+                    <section id="con3" style="width: 600px;height:250px;"></section>
+                </article>
+            </section>
+        </article>
+        <article class="hotSell">
+            <h3 class="contribu_title"><span>休闲区---音乐吧台 </span></h3>
+            <section class="ctr">(初始双击播放,点击控制播放暂停)</section>
+            <section class="record"></section>
+            <audio src="./assets/Uu(刘梦妤) - 小城小爱.mp3" loop></audio>
+            <h3 class="contribu_title2"><span>滞销商品TOP5</span></h3>
+            <table class="t1">
+                <tr>
+                    <th>序号</th>
+                    <th>商品</th>
+                    <th>单价</th>
+                    <th>销量</th>
+                    <th>总消费额</th>
+                    <th>低于平均贡献</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>西红柿</td>
+                    <td>20元</td>
+                    <td>100斤</td>
+                    <td>2900元</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>大米</td>
+                    <td>5.9元</td>
+                    <td>60斤</td>
+                    <td>2900元</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>鸡蛋</td>
+                    <td>3.2元</td>
+                    <td>100斤</td>
+                    <td>3700元</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>面包</td>
+                    <td>19元</td>
+                    <td>100斤</td>
+                    <td>1500元</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>零食</td>
+                    <td>39元</td>
+                    <td>100斤</td>
+                    <td>1900元</td>
+                    <td>13%</td>
+                </tr>
+            </table>
+            <h3 class="contribu_title3"><span>用户最爱的商品组合Top5</span></h3>
+            <table class="t2">
+                <tr>
+                    <th>序号</th>
+                    <th>商品</th>
+                    <th>单价</th>
+                    <th>销量</th>
+                    <th>总消费额</th>
+                    <th>低于平均贡献</th>
+                </tr>
+                <tr style="color: rgba(0,0,255,.5);">
+                    <td>1</td>
+                    <td>西红柿+鸡蛋</td>
+                    <td>20元</td>
+                    <td>100斤</td>
+                    <td>2900元</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>大米+鸡肉</td>
+                    <td>5.9元</td>
+                    <td>60斤</td>
+                    <td>2900元</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>鸡蛋+牛奶</td>
+                    <td>3.2元</td>
+                    <td>100斤</td>
+                    <td>3700元</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>面包+生菜</td>
+                    <td>19元</td>
+                    <td>100斤</td>
+                    <td>1500元</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>零食+红酒</td>
+                    <td>39元</td>
+                    <td>100斤</td>
+                    <td>1900元</td>
+                    <td>13%</td>
+                </tr>
+            </table>
+        </article>
+        <article class="analyse">
+            <section class="analyse_title">
+                <p class="big">商品销量分析</p>
+                <p class="small">MERCHANDISE SALES ANALYSIS</p>
+            </section>
+            <section class="analyse_money">
+                <article>
+                    <p>日总销售额</p>
+                    <p>3000 <span>元</span></p>
+                </article>
+                <article>
+                    <p>日销售数量</p>
+                    <p>1350 <span>单</span></p>
+                </article>
+                <article>
+                    <p>日销售平均客单价</p>
+                    <p>1234 <span>元</span></p>
+                </article>
+            </section>
+            <article class="biao_title">
+                <section class="con_table_title">销售额/增长略趋势</section>
+                <section class="biao_right">
+                    <span>日 </span>
+                    <span>周 </span>
+                    <span>月 </span>
+                </section>
+            </article>
+            <section id="analyse" style="width: 100%;height:400px;"></section>
+            <video poster="https://img1.baidu.com/it/u=3649137201,1382251749&fm=253&fmt=auto&app=138&f=JPEG?w=1000&h=500" height="300px" controls src="./assets/mda-jk0c3xd2fd64acc5.mp4"></video>
+            <canvas id="bigData" width="400" height="200"></canvas>
+        </article>
+
+        <article class="category">
+            <h3 class="contribu_title2"><span>不同类别商品销售额排名Top10</span></h3>
+            <article  style="border: 1px solid #3C82D0; width: 90%; margin-left: 30px; margin-top: 30px; padding: 20px;">
+                <section id="con4" style="width: 700px;height:500px;"></section>
+                <article class="fruit">
+                    <section>
+                        <img src="./images/icon_01.png" alt="">
+                        <p>新鲜水果</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_02.png" alt="">
+                        <p>居家用品</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_03.png" alt="">
+                        <p>农物清洁</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_04.png" alt="">
+                        <p>坚果蜜饯</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_05.png" alt="">
+                        <p>休闲零食</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_06.png" alt="">
+                        <p>牛奶水饮</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_07.png" alt="">
+                        <p>纸品湿巾</p>
+                    </section>
+                    <section>
+                        <img src="./images/icon_06.png" alt="">
+                        <p>小家电馆</p>
+                    </section>
+                </article>
+            </article>
+        </article>
+        <article class="mainForce">
+            <section id="sec" style="width: 700px;height:500px;"></section>
+            <section class="table_title"><span>主力用户购买商品类别TOP5</span></section>
+            <table>
+                <tr>
+                    <td>序号</td>
+                    <td>商品</td>
+                    <td>单价</td>
+                    <td>销量</td>
+                    <td>总消费额</td>
+                    <td>消费贡献占比</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>蔬菜</td>
+                    <td>29元</td>
+                    <td>100斤</td>
+                    <td>2900元</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>粮食</td>
+                    <td>29元</td>
+                    <td>60斤</td>
+                    <td>3700元</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>西红柿</td>
+                    <td>29元</td>
+                    <td>100斤</td>
+                    <td>1500元</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>面食</td>
+                    <td>29元</td>
+                    <td>100斤</td>
+                    <td>1900元</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>零食</td>
+                    <td>29元</td>
+                    <td>100斤</td>
+                    <td>2900元</td>
+                    <td>13%</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+
+
+    <script src="./ec.js"></script>
+</body>
+
+</html>
